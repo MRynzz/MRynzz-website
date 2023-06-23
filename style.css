@@ -1,0 +1,104 @@
+/* style.css */
+
+/* Reset CSS */
+
+	body {
+	background-image: url(www.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+#hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+#hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#portofolio {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 300px;
+  margin: 10px;
+}
+
+#layanan {
+  padding: 40px 0;
+}
+
+#layanan ul {
+  list-style: disc;
+  margin-left: 40px;
+}
+
+#kontak {
+  padding: 40px 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}

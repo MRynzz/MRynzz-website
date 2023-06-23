@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SH Photo Studio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>SH Photo Studio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="portofolio.html">Portofolio</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Selamat datang di SH Photo Studio</h2>
+      <p>Kami mengabadikan momen spesial Anda dengan hasil foto yang memukau.</p>
+      <a href="kontak.html" class="cta-button">Hubungi Kami</a>
+    </section>
+
+    <section id="layanan">
+      <h2>Layanan</h2>
+      <ul id="layanan-list">
+        <li>Foto Prewedding</li>
+        <li>Foto Keluarga</li>
+        <li>Pas Foto</li>
+        <li>Foto Acara</li>
+      </ul>
+    </section>
+
+    <script>
+      // Mengambil elemen daftar layanan
+      const layananList = document.getElementById('layanan-list');
+
+      // Menambahkan event listener untuk setiap elemen layanan
+      layananList.addEventListener('click', function(event) {
+        // Mengecek apakah elemen yang diklik adalah elemen layanan
+        if (event.target.tagName === 'LI') {
+          // Mengambil teks dari elemen yang diklik
+          const layanan = event.target.textContent;
+          
+          // Melakukan tindakan sesuai dengan layanan yang dipilih
+          switch (layanan) {
+            case 'Foto Prewedding':
+              console.log('Anda memilih layanan Foto Prewedding');
+              // Tambahkan tindakan lain yang sesuai dengan layanan
+              break;
+            case 'Foto Keluarga':
+              console.log('Anda memilih layanan Foto Keluarga');
+              // Tambahkan tindakan lain yang sesuai dengan layanan
+              break;
+            case 'Pas Foto':
+              console.log('Anda memilih layanan Foto Produk');
+              // Tambahkan tindakan lain yang sesuai dengan layanan
+              break;
+            case 'Foto Acara':
+              console.log('Anda memilih layanan Foto Acara');
+              // Tambahkan tindakan lain yang sesuai dengan layanan
+              break;
+            default:
+              break;
+          }
+        }
+      });
+    </script>
+
+    <!-- ...Bagian lain dari HTML Anda... -->
+  </main>
+
+  <footer>
+    <p>Hak Cipta &copy; 2023 SH Photo Studio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

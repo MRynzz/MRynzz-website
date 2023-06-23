@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SH Photo Studio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>SH Photo Studio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="portofolio.html">Portofolio</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Selamat datang di SH Photo Studio</h2>
+      <p>Kami mengabadikan momen spesial Anda dengan hasil foto yang memukau.</p>
+      <a href="kontak.html" class="cta-button">Hubungi Kami</a>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <p>Alamat: Jln. Lintas Timur, Rt. 14, INDONESIA</p>
+      <p>Telp: 0813-6640-2524</p>
+      <p>Email: shphotostudio88@gmail.com</p>
+
+      <h3>Kirim Pesan</h3>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Nama Anda" required>
+        <input type="email" id="email" placeholder="Email Anda" required>
+        <textarea id="message" placeholder="Pesan Anda" required></textarea>
+        <button type="submit" id="send-button">Kirim</button>
+      </form>
+    </section>
+
+    <script>
+      // Mengambil elemen formulir kontak
+      const contactForm = document.getElementById('contact-form');
+
+      // Menambahkan event listener pada saat formulir dikirim
+      contactForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Mencegah pengiriman formulir secara default
+
+        // Mengambil nilai inputan formulir
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Proses pengiriman pesan (Anda dapat menggantinya dengan tindakan yang sesuai)
+        console.log(`Pesan dari ${name} (${email}): ${message}`);
+        
+        // Menghapus isi formulir setelah pengiriman pesan
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
+      });
+    </script>
+
+    <!-- ...Bagian lain dari HTML Anda... -->
+  </main>
+
+  <footer>
+    <p>Hak Cipta &copy; 2023 SH Photo Studio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
